@@ -1,0 +1,72 @@
+@import "../styles/variables.scss";
+
+.orange {
+  color: #ffad05;
+}
+
+.hero__content {
+  margin-left: 8%;
+  margin-top: 15%;
+
+  & h1 {
+    font-size: 5em;
+    margin-bottom: 20px;
+  }
+
+  & p {
+    font-size: 1.5em;
+    line-height: 25px;
+  }
+}
+
+.CTA__btn {
+  background: #ffad05;
+  padding: 10px 18px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  display: inline-block;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px #ffad05;
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0 10px #ffad05;
+  }
+}
+
+.hero {
+  width: 30%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+
+  & img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-70%);
+    transition: bottom 1s, left 1s;
+  }
+
+  &__shape {
+    width: 800px;
+  }
+
+  &:hover &__shape {
+    bottom: 40px;
+  }
+
+  &:hover &__main {
+    left: 45%;
+  }
+}
