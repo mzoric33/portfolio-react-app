@@ -1,0 +1,29 @@
+@import "../styles/variables.scss";
+
+.omeni__content__title {
+  text-align: center;
+  font-size: 5em;
+  margin-bottom: 20px;
+}
+.section {
+  display: flex;
+  margin: 10% 10% 10% 10%;
+
+  & img {
+    width: 250px;
+    height: 250px;
+    margin-right: 10%;
+  }
+
+  & p {
+    text-align: left;
+    max-width: 40%;
+    margin-right: 30%;
+    margin-left: 10%;
+    font-size: 1.5em;
+  }
+}
+
+.section2 img {
+  margin-left: 10%;
+}
